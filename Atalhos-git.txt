@@ -1,0 +1,4 @@
+Git status = mostra se a pasta do repositório no pc possui alguma diferença com o repositório no git
+git add . (ou -A) = adiciona todos os arquivos novos para que seja possível fazer o commit
+git commit -m "mensagem" = commita com o comentário escrito nas aspas.
+cd nome-pasta = abre a pasta com o nome escolhido

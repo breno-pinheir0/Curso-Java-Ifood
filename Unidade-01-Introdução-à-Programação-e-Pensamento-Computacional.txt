@@ -1,0 +1,26 @@
+- O primeiro passo para a resolução de um problema, é quebrá-lo em problemas menores, sendo mais fáceis e gerenciáveis;
+- Para fazer a decomposição, é mecessário estudar, explorar o problema;
+- Outra estratégia, seria fazer a recombinação do problema, para que ele faça sentido. 
+-Ex.: Para criar um app, se decompõe a criação nos seguintes passos: 1) Identificar a finalidade, 2) Criar a interface, 3) Criar as funcionalidades, 4) Determinar os pré requisitos
+- Com a generalização, conseguimos obter resoluções para problemas diferentes, ou seja, uma mesma resolução pode ser utilizada por mais de um problema.
+- A detecção de padrão vem da ideia de extrair características para classificar os dados.
+- Abstrair é observar, um ou mais elementos, avaliando características e propriedades,
+- Abstração é o processo intelectual de isolamento de um objeto da realidade
+- Generalização, na lógica, é a operação intelectual que consiste em reunir numa classe geral, um conjunto de seres ou fenômenos similares
+- O algoritmo descreve o problema por meio de ferramentas narrativas, fluxograma ou pseudocódigo
+- Uma variável é uma estrutura que irá receber uma estrutura de dados porém com ideterminado tipo de valor.
+- A instrução executa uma ação para manipular um dado
+- Uma estrutura Condicional possui uma condição ou suposição que implica uma suposição ou hipótese. Ou seja, existe uma condição para que seja realizada a ação.
+- O Hardware limita a capacidade do software.
+- Problemas de decisão são de carater lógico, onde devemos responder se sim ou não.
+- Problema de busca possui relacionamento binário
+- Problemas de otimização tem como objetivo maximizar ou minimizar uma função
+- Linguagem de programação é um metodo padronizado composto por um conjunto de regras (operações, instruções) sintáticas e semânticas de implementação de um código fonte
+- O programa fonte é enviado para o compilador que executa a análise do programa, que se torna um programa objeto que é traduzido para linguagem de máquina.
+- Algumas linguagens executam o programa diretamente, sem gerar o programa objeto (linguagem de baixo nível).
+- Um código deve ser de fácil leitura, compreensão e coerente.
+- A análise sintática de um programa é a forma, por meio de símbolos especiais, palavras reservadas, etc., qual é a estrutura relacionada para a codificação dentro da linguagem.
+- Cada linguagem de programação tem uma sintaxe associada.
+- A Análise semântica está relacionada à lógica de um programa.
+- O Paradigma Estruturado é utilizável em problemas simples e diretos.
+- A Orientação à Objetos é baseada na utilização de objetos e suas interações. ELe é análogo ao mundo real.

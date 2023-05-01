@@ -11,6 +11,14 @@
 - Variável é sempre no singular, axceto quando se referir a um array ou coleção de dados.
 - As variáveis devem possuir um idioma único.
 - Uma variável em Java sempre segue a estrutura: Tipo Nome = Atribuição (opcional em alguns casos).
+- Métodos devem ser nomeados como verbos e com inicial minúscula e, a partir da segunda palavra, maiúscula
 - Um método em Java sempre segue a estrutura: TipoRetorno NomeNoInfinitivo Parametro(s).
 - Indentar é escrever o código de forma hierárquica, facilitando a visualização e o entendimento do programa. É utilizar o tab para o que tiver após as chaves ({}) no programa.
 - No VSCode, para adicionar um package, deve-se criar uma pasta para cada . que queira ser criado. Ex: para o package edu.gleyson.primeirasemana deve-se criar uma pasta edu, uma pasta gleyson dentro e depois uma primeirasemana dentro de gleyson, ficando src>edu>gleyson>primeirasemana
+
+> Tipos e Variáveis
+- Os oitos tipos primitivos em Java são: INT, BYTE, SHORT, LONG, FLOAT, DOUBLE, BOOLEAN e CHAR. Eles são armazenados diretamente na pilha de memória.
+- O tipo float ocupa metade da memória que o tipo double ocupa, porém sua precisão decimal é menor, entre 6 e 7 dígitos.
+- O tipo Float precisa terminar com um F (minúsculo ou maiúsculo) se não dará erro.
+- O tipo long precisa terminar com um L(minúsculo ou maiúsculo).
+- Casting é quando colocamos uma possível precisão maior em uma variável com precisão menor. Ex: int possui precisão maior que short, então só é possível declarar um int como short com o casting (assumindo que pode dar erro caso o int seja de maior precisão que short comporta): int numeroNormal = 1; short numeroCurto = (short) numeroNormal;

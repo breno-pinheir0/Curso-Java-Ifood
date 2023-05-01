@@ -4,7 +4,8 @@ public class MinhaClasse {
         String segundoNome = "Pinheiro";
 
         String nomeCompleto = nomeCompleto(primeiroNome, segundoNome);
-        System.out.println(nomeCompleto);
+        int modulo = 18 % 3;
+        System.out.println(modulo);
     }
 
     public static String nomeCompleto (String primeiroNome, String segundoNome){

@@ -1,0 +1,22 @@
+> Operadores Relacionais
+
+- Operadores relacionais são símbolos especiais capazes de realizar comparações entre determinados operando e, em seguida, retornar um resultado.
+- São eles ==, !=, <, <=, >, >=.
+- Devem ter no mínimo 2 operandos.
+
+> Operadores Lógicos
+
+- São símbolos especiais capazes de realizar comparações lógicas entre operandos lógicos ou expressões.
+- Conjunção (&&): é uma operação lógica que só é verdadeira quando ambos os operandos ou expressões envolvidas são verdade.
+- Disjunção (||): a operação só é falsa quando ambos os operandos ou expressões envolvidas são falsos. 
+- Disjunção Exclusiva (^): a operação só é verdade quando ambos os operandos ou expressões são opostos.
+- Negação (!): operação que inverte o valor lógico de um operando ou expressão.
+
+> Controle de Fluxo
+
+- São estruturas com capacidade de direcionar o fluxo de execução do código.
+- São eles: if, if-else, if-else-if, switch, for, while, do while, break, continue e return
+
+> Blocos de Execução
+
+- Blocos são grupos de 0 ou mais códigos que trabalham em conjunto para executar uma operação.

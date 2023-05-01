@@ -1,3 +1,16 @@
 > Anatomia das Classes
 - A escrita de códigos de um programa é feita pela composição de palavras pré-definidas pela linguagem com as expressões utilizadas para determinar o nome dos arquivos, classes, atributos e métodos. 
--
+- Todo método precisa de um parâmetro.
+- O nome das classes precisa ser maiúsculo. No caso de um nome composto (Ex: MinhaClasse) as primeiras letras das palavras devem ser maiúscula.
+- A classe deve possuir o mesmo nome do arquivo .java
+- Toda variável deve ser escrita em letra minúscula. Para palavras compostas, a primeira letra da segunda palavra deve ser maiúscula.
+- Uma variável toda com letra maiúscula ou com uma definição "final" antes do tipo da variável, indica que o valor da variável não será alterado. Ex: final String BR = "Brasil"; (O valor da String BR sempre será "Brasil").
+- Uma variável deve conter apenas letras,_,$ ou número de 0 a 9
+- Uma variável não pode iniciar com um número e não pode conter espaço.
+- Variáveis devem ser claras, sem abreviações ou definições sem sentido
+- Variável é sempre no singular, axceto quando se referir a um array ou coleção de dados.
+- As variáveis devem possuir um idioma único.
+- Uma variável em Java sempre segue a estrutura: Tipo Nome = Atribuição (opcional em alguns casos).
+- Um método em Java sempre segue a estrutura: TipoRetorno NomeNoInfinitivo Parametro(s).
+- Indentar é escrever o código de forma hierárquica, facilitando a visualização e o entendimento do programa. É utilizar o tab para o que tiver após as chaves ({}) no programa.
+- No VSCode, para adicionar um package, deve-se criar uma pasta para cada . que queira ser criado. Ex: para o package edu.gleyson.primeirasemana deve-se criar uma pasta edu, uma pasta gleyson dentro e depois uma primeirasemana dentro de gleyson, ficando src>edu>gleyson>primeirasemana

@@ -1,0 +1,13 @@
+> Estruturas de Repetição
+
+- Uma estrutura de repetição permite que uma sequência de comandos seja executada repetidamente, caso determinadas condições sejam satisfeitas. Essas condições são representadas por expressões lógicas.
+- As estruturas de repetição podem ser classificadas em: 
+o Repetição com teste no início (while)
+o Repetição com teste no final (do-while)
+o Repetição contada (for)
+- O comamando break é utilizado para terminar de forma abrupta uma repetição. Ele pode ser utilizado fora de uma estrutura de repetição, como no switch.
+- Quando o comando continue é executado, os comandos restantes da repetição são ignorados e o programa volta a testar novamente ou não. O continue só pode ser utilizado em uma estrutura de repetição.
+- O while primeiro passa pela expressão para, caso seja true, executar a sequência.
+- O do-while percorre a senteça, independente de ser true ou false, na primeira vez, para depois passar pela expressão que determina se vai voltar para a sentença, caso seja true, ou finaliza em caso de false.
+- O for inicializa, realiza um teste e, se for true, executa a sentença e, antes de voltar para o teste novamente, ele faz uma atualização.
+- 

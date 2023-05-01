@@ -18,7 +18,19 @@
 
 > Tipos e Variáveis
 - Os oitos tipos primitivos em Java são: INT, BYTE, SHORT, LONG, FLOAT, DOUBLE, BOOLEAN e CHAR. Eles são armazenados diretamente na pilha de memória.
-- O tipo float ocupa metade da memória que o tipo double ocupa, porém sua precisão decimal é menor, entre 6 e 7 dígitos.
+- O tipo float ocupa metade da memória que o tipo double, porém sua precisão decimal é menor, entre 6 e 7 dígitos.
 - O tipo Float precisa terminar com um F (minúsculo ou maiúsculo) se não dará erro.
 - O tipo long precisa terminar com um L(minúsculo ou maiúsculo).
 - Casting é quando colocamos uma possível precisão maior em uma variável com precisão menor. Ex: int possui precisão maior que short, então só é possível declarar um int como short com o casting (assumindo que pode dar erro caso o int seja de maior precisão que short comporta): int numeroNormal = 1; short numeroCurto = (short) numeroNormal;
+- Constantes são valores armazenados em memória que não podem ser modificados depois de declarados. São representados pela palavra reervada final, seguida pelo tipo. A variável deve ser escrita  em caixa alta.
+
+> Operadores
+- O operador de atribuição (=) é utilizado para definir o valor inicial ou sobrescrever o valor de uma variável.
+- Os operadores aritméticos (+, -, /, *) são utilizados para realizar operações matemáticas entre valores numéricos. Módulo(%), que representa o resto de uma divisão, também é um operador aritmético.
+- O operador de adição (+) também realiza a junção de palavras (concatenação). Ex: String nomeCompleto = "Breno " + "Pinheiro";
+- Operadores unários são aplicados juntamente com outro operador aritmético. 
+- O Operador unário de valor positivo(+) determina que o número é positivo. Números podem ser positivos sem o uso do operador.
+- O Operador unário de valor negativo (-) nega um número ou expressão aritmética.
+- O Operador unário de incremento de valor (++) incrementa o valor em 1 unidade.
+- O Operador unário de decremento de valor (--) decrementa o valor em 1 unidade.
+- O Operador unário lógico de negação (!) nega o valor de uma expressão booleana.

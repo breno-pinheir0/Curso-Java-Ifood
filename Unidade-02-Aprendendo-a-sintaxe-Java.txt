@@ -1,4 +1,5 @@
 > Anatomia das Classes
+
 - A escrita de códigos de um programa é feita pela composição de palavras pré-definidas pela linguagem com as expressões utilizadas para determinar o nome dos arquivos, classes, atributos e métodos. 
 - Todo método precisa de um parâmetro.
 - O nome das classes precisa ser maiúsculo. No caso de um nome composto (Ex: MinhaClasse) as primeiras letras das palavras devem ser maiúscula.
@@ -17,6 +18,7 @@
 - No VSCode, para adicionar um package, deve-se criar uma pasta para cada . que queira ser criado. Ex: para o package edu.gleyson.primeirasemana deve-se criar uma pasta edu, uma pasta gleyson dentro e depois uma primeirasemana dentro de gleyson, ficando src>edu>gleyson>primeirasemana
 
 > Tipos e Variáveis
+
 - Os oitos tipos primitivos em Java são: INT, BYTE, SHORT, LONG, FLOAT, DOUBLE, BOOLEAN e CHAR. Eles são armazenados diretamente na pilha de memória.
 - O tipo float ocupa metade da memória que o tipo double, porém sua precisão decimal é menor, entre 6 e 7 dígitos.
 - O tipo Float precisa terminar com um F (minúsculo ou maiúsculo) se não dará erro.
@@ -25,6 +27,7 @@
 - Constantes são valores armazenados em memória que não podem ser modificados depois de declarados. São representados pela palavra reervada final, seguida pelo tipo. A variável deve ser escrita  em caixa alta.
 
 > Operadores
+
 - O Operador de Atribuição (=) é utilizado para definir o valor inicial ou sobrescrever o valor de uma variável.
 - Os Operadores Aritméticos (+, -, /, *) são utilizados para realizar operações matemáticas entre valores numéricos. Módulo(%), que representa o resto de uma divisão, também é um operador aritmético.
 - O Operador de Adição (+) também realiza a junção de palavras (concatenação). Ex: String nomeCompleto = "Breno " + "Pinheiro";
@@ -38,3 +41,10 @@
 - Operadores Relacionais avaliam a relação entre duas variáveis ou expressões. São eles (==(igual a), != (diferente de), < (menor que), <= (menor ou igual), > (maior que), >=(maior ou igual)).
 - Para comparação de conteúdo de objetos, é recomendado a utilização da função equals: String um = "A"; String dois = new String("A"); // O conteúdo é o mesmo, porém são objetos diferentes. Para comparar deve ser feito: System.out.println(um.equals(dois));
 - Operadores Lógicos representam o recurso que nos permite criar expressões lógicas maiores a partir da junção de duas ou mais expressões. (&& = E, || = OU)
+
+> Métodos
+
+- Métodos são funções disponíveis dentro de classes.
+- Métodos devem ser nomeados como verbo.
+- Um método que não retorna valor é representado pela palavra-chave void.
+- 

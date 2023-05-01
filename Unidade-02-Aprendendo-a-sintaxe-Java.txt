@@ -25,12 +25,16 @@
 - Constantes são valores armazenados em memória que não podem ser modificados depois de declarados. São representados pela palavra reervada final, seguida pelo tipo. A variável deve ser escrita  em caixa alta.
 
 > Operadores
-- O operador de atribuição (=) é utilizado para definir o valor inicial ou sobrescrever o valor de uma variável.
-- Os operadores aritméticos (+, -, /, *) são utilizados para realizar operações matemáticas entre valores numéricos. Módulo(%), que representa o resto de uma divisão, também é um operador aritmético.
-- O operador de adição (+) também realiza a junção de palavras (concatenação). Ex: String nomeCompleto = "Breno " + "Pinheiro";
-- Operadores unários são aplicados juntamente com outro operador aritmético. 
-- O Operador unário de valor positivo(+) determina que o número é positivo. Números podem ser positivos sem o uso do operador.
-- O Operador unário de valor negativo (-) nega um número ou expressão aritmética.
-- O Operador unário de incremento de valor (++) incrementa o valor em 1 unidade.
-- O Operador unário de decremento de valor (--) decrementa o valor em 1 unidade.
-- O Operador unário lógico de negação (!) nega o valor de uma expressão booleana.
+- O Operador de Atribuição (=) é utilizado para definir o valor inicial ou sobrescrever o valor de uma variável.
+- Os Operadores Aritméticos (+, -, /, *) são utilizados para realizar operações matemáticas entre valores numéricos. Módulo(%), que representa o resto de uma divisão, também é um operador aritmético.
+- O Operador de Adição (+) também realiza a junção de palavras (concatenação). Ex: String nomeCompleto = "Breno " + "Pinheiro";
+- Operadores Unários são aplicados juntamente com outro operador aritmético. 
+- O Operador Unário de valor positivo(+) determina que o número é positivo. Números podem ser positivos sem o uso do operador.
+- O Operador Unário de valor negativo (-) nega um número ou expressão aritmética.
+- O Operador Unário de incremento de valor (++) incrementa o valor em 1 unidade.
+- O Operador Unário de decremento de valor (--) decrementa o valor em 1 unidade.
+- O Operador Unário lógico de negação (!) nega o valor de uma expressão booleana.
+- O Operador de Condição Ternária é uma forma resumida para definir uma condição. É representado pelos símbolos ?: e utilizada na estrutura: <Expressão Condicional> ? <Caso seja true> : <Caso seja false>
+- Operadores Relacionais avaliam a relação entre duas variáveis ou expressões. São eles (==(igual a), != (diferente de), < (menor que), <= (menor ou igual), > (maior que), >=(maior ou igual)).
+- Para comparação de conteúdo de objetos, é recomendado a utilização da função equals: String um = "A"; String dois = new String("A"); // O conteúdo é o mesmo, porém são objetos diferentes. Para comparar deve ser feito: System.out.println(um.equals(dois));
+- Operadores Lógicos representam o recurso que nos permite criar expressões lógicas maiores a partir da junção de duas ou mais expressões. (&& = E, || = OU)

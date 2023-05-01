@@ -55,4 +55,20 @@
 
 > Palavras Reservadas
 
-- 
+- Todas as palavras reservadas são em letras minúsculas e geralmente possuem uma cor especial nas IDEs
+- import: importa pacotes ou classes para dentro do código
+- package: especifica a que pacote todas as classes de um arquivo pertencem
+- public: acesso de qualquer classe
+- private: acesso apenas dentro da classe
+- protected: acesso por classes no mesmo pacote e subclasses (herança)
+- abstract: classe que não pode ser instanciada ou método que precisa ser implementado por uma subclasse não abstrata
+- class: especific auma classe
+- extends: indica a superclasse que a subclasse está estendendo
+- final: impossibilita que uma classe seja estendida, que um método seja sobrescrito ou que uma variável seja reinicializada
+- implements: indica as interfaces que uma classe irá implementar 
+- interface: especifica uma interface
+- new: instancia um novo objeto, chamando seu construtor
+- static: faz um método ou variável pertencer à classe
+- break: sai do bloco de código em que ele está
+- case: executa um bloco de código dependendo do teste do switch
+- throws: determina que um método pode disparar uma exceção

@@ -6,6 +6,7 @@ public class MinhaClasse {
         String nomeCompleto = nomeCompleto(primeiroNome, segundoNome);
         int modulo = 18 % 3;
         System.out.println(modulo);
+        System.out.println(nomeCompleto);
     }
 
     public static String nomeCompleto (String primeiroNome, String segundoNome){

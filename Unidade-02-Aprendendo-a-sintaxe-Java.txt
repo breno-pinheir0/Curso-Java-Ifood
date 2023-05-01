@@ -47,4 +47,12 @@
 - Métodos são funções disponíveis dentro de classes.
 - Métodos devem ser nomeados como verbo.
 - Um método que não retorna valor é representado pela palavra-chave void.
+- Um método pode ser público (public) ou privado (private).
+
+> Escopo
+
+- Escopo é o ambiente onde uma variável pode ser acessada.
+
+> Palavras Reservadas
+
 - 

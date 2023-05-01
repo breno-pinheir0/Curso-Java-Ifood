@@ -1,3 +1,5 @@
+https://glysns.gitbook.io/java-basico
+
 > Anatomia das Classes
 
 - A escrita de códigos de um programa é feita pela composição de palavras pré-definidas pela linguagem com as expressões utilizadas para determinar o nome dos arquivos, classes, atributos e métodos. 
@@ -72,3 +74,9 @@
 - break: sai do bloco de código em que ele está
 - case: executa um bloco de código dependendo do teste do switch
 - throws: determina que um método pode disparar uma exceção
+
+> Java Doc
+
+- Tags representam dados relevantes para a compreensão da proposta de uma classe e os conkuntos de seus métodos. São elas @author(Autor/Criador), @version(versão do recurso), @since(Data de início), @param(descrição dos parâmetros dos métodos), @return(definição do tipo de retorno de um método) e @throws(se o método lança alguma exceção). As Tags são colocadas dentro de comentários.
+- Usamos /** quando queremos criar uma documentação.
+- Para criar uma documentação no formato html, basta botar no cmd:  javadoc -encoding UTF-8 -docencoding ISO-8859-1  -d ../docs  src/*.java

@@ -1,0 +1,21 @@
+- Método é uma porção de código que é disponibilizada por uma classe. São responsáveis por definir e realizar um determinado comportamento.
+- Padrão de definição de um método (o que estiver dentro de chaves é opcional): <visibilidade> <tipo> <modificador> retorno nome (<parâmetros>) <exceções> corpo
+o visibilidade: "public", "protected", "private"
+o tipo: concreto ou abstrato
+o modificador: "static" ou "final"
+o retorno: tipo de dado ou "void"
+o nome: nome que é dado ao método
+o parâmetros: parâmetros que pode receber
+o exceções: exceções(erros) que pode lançar
+o corpo: código que possui ou vazio
+- Forma de utilizar um método:
+o nome_da_classe.nome_do_metodo();
+o nome_da_classe.nome_do_metodo(...);
+o nome_do_objeto.nome_do_metodo();
+o nome_do_objeto.nome_do_metodo(...);
+- Assinatura é a forma de identificar unicamente o método
+- Construtor e Destrutor são métodos especiais usados na Orientação a Objetos
+- Sobrecarga é a capacidade de definir métodos para diferentes contextos, mas preservando seu nome.
+- Um método executa seu retorno quando competa todas as instruções internas; chega a uma declaração explícita de retorno; lança uma exceção (erro).
+- O tipo de retorno de um método é definido na sua criação.
+- O tipo de dado do retorno deve ser compatível com o do método.

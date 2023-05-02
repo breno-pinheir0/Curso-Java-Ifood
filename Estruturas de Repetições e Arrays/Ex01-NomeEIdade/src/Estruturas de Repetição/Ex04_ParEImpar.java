@@ -20,6 +20,7 @@ public class Ex04_ParEImpar {
                 par++;
             } else{impar++;}
         }
+        scan.close();
         System.out.println("Foram digitados " + par + " números pares e " + impar + " números ímpares.");
     }
 

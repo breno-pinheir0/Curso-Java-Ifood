@@ -19,5 +19,6 @@ public class Ex05_Tabuada {
             System.out.println(numero_desejado + " X " + numero_tabuada + " = " + multiplicacao);
             numero_tabuada++;
         }
+        scan.close();
     }
 }

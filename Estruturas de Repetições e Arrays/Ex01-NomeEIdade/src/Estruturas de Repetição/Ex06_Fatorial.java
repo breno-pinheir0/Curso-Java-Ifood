@@ -13,7 +13,8 @@ public class Ex06_Fatorial {
         for(int i = numero ; i > 0; i--){
             fatorial = fatorial * i;
         }
-
+        scan.close();
         System.out.println("O fatorial do número " + numero + " é " + fatorial);
     }
+    
 }

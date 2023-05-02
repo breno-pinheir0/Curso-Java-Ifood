@@ -17,7 +17,7 @@ public class Ex02_Nota {
             System.out.println("Digite novamente: ");
             nota = scan.nextInt();
         }
-            
+        scan.close();
 
     }
 }

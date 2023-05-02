@@ -22,6 +22,7 @@ public class Ex03_MaiorEMedia {
 
         }while(contador < 5);
         media = media / 5;
+        scan.close();
         System.out.println("Maior número: " + maior + ". Média: " + media);
 
     }

@@ -1,3 +1,15 @@
 - Paradigma Estruturado possui uma representação mais simples e foca em operações (funções) e dados.
 - Paradigma Orientado a Objeto possui uma representação mais realista e foca na modelagem de entidades e nas interações entre elas.
 - Orientação a Objetos é um paradigma de análise, projeto e programação de sistemas de software baseado na composição e interação entre diversas unidades de software chamadas de objetos.
+- A abstraação é o processo de isolar características de um objeto, considerando os que tenham em comum certos grupos de objetos.
+- Reuso é a capacidade de criar novas unidades de código a partir de outras já existentes.
+- Encapsulamento é a capacidade de esconder complexidades e proteger dados.
+- Classe é uma estrutura que abstrai um conjunto de objetos com características similares. Uma classe define o comportamento de seus objetos por métodos e os estados dos objetos através de atributos.
+- Classes devem ser substantivos, com nome significativos e seu contexto deve ser levado em consideração.
+- Atributo é o elemento de uma classe responsável por definir sua estrutura de dados. Um conjunto de atributos é responsável por representar suas características e fará parte dos objetos criados por meio da classe.
+- Atributos devem ser substantivos e adjetivos, com nomes significativos e seu contexto deve ser considerado.
+- Método é uma porção de código que é disponibilizada por uma classe. São responsáveis por definir e realizar um determinado comportamento.
+- Métodos são verbos, com nomes significatibos e o contexto deve ser considerado.
+- Objeto é a representação de um conceito/entidade do mundo real, que pode ser física(Ex: bola, carro, árvore, etc.) ou conceitual(Ex: Viagem, estoque, compra, etc.) e possui significado bem definido. 
+- Como criar um objeto: Carro carro = new Carro();
+- Mensagem é o processo de ativação de um método de um objeto. Isso ocorre quando uma requisição (chamada) a esse método é realizada, assim disparando a execução de seu comportamento descrito por sua classe. Pode também ser direcionada diretamente à classe caso a requisição seja a um método estático.

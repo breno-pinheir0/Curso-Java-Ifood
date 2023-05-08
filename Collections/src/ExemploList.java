@@ -1,7 +1,7 @@
 import java.util.*;
 public class ExemploList {
     public static void main(String[] args) throws Exception {
-        // Dada uma lista com 7 notas de um aluno [7, 8.5, 9.3, 5, 7, 8.2, 3.6], faça:
+        // Dada uma lista com 7 notas de um aluno [7, 8.5, 9.3, 5, 7, 0, 3.6], faça:
 
         /* Formas de se declarar uma Lista:
         * ArrayList<Double> notas = new ArrayList<>;
@@ -14,7 +14,7 @@ public class ExemploList {
         notas.add(9.3);
         notas.add(5.0);
         notas.add(7.0); 
-        notas.add(8.0);
+        notas.add(0.0);
         notas.add(3.6);
         /* Formas de imprimir uma lista:
          * System.out.println(notas);
@@ -33,6 +33,8 @@ public class ExemploList {
         System.out.println(notas);
 
         System.out.println("Confira se a nota 5.0 está na lista: " + notas.contains(5d));
-    
+        
+        System.out.println("Exiba a terceira nota adicionada: " + notas.get(2));
+
     }
 }

@@ -1,4 +1,6 @@
 - Collection é um objeto que agrupa múltiplos elementos dentro de uma única unidade.
 - Serve para armazenar e processar coleções de dados de forma eficiente.
 - Algoritmo é uma sequência lógica, finita e definida de instruções que devem ser seguidas para resolver um problema.
-- 
+- A interface List permite elementos duplicados e garante ordem de inserção.
+- ArrayList deve ser usado onde mais operações de pesquisa são necessárias. Usa um array para guardar os elementos.
+- LinkedList deve ser usado onde mais operações de inserção e exclusão são necessárias. Utiliza uma lista duplamente ligada para guardar os elementos.

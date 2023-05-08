@@ -36,5 +36,9 @@ public class ExemploList {
         
         System.out.println("Exiba a terceira nota adicionada: " + notas.get(2));
 
+        System.out.println("Exiba a menor nota: " + Collections.min(notas));
+
+        System.out.println("Exiba a maior nota: " + Collections.max(notas));
+
     }
 }

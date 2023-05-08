@@ -6,7 +6,7 @@ public class Aplicacao {
         ClasseMae[] classes = new ClasseMae[]{new ClasseFilha1(), new ClasseFilha2(), new ClasseMae()};
 
         for(ClasseMae classe: classes){ //for each, que passa em cada objeto do vetor "classes"
-            classe.metodo01();
+            classe.metodo01(); // Ocorre Polimorfismo porque o metodo01, presente em todos os 3 objetos, possui comportamento diferente de acordo com cada objeto
         }
 
         System.out.println("");

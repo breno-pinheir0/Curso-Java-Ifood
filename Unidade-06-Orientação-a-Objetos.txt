@@ -16,4 +16,7 @@
 - Herança é o relacionamento entre classes em que uma classe, chamada de subclasse, é uma extensão de outra classe chamada de superclasse. Devido a isto, a subclasse consegue reaproveitar os atributos e métodos da superclasse, além de possuir seus próprios membros(atributos e métodos). Para representar, usamos: class A extends B{}
 - Uma herança simples é quando a classe filha só possui uma classe mãe.
 - Uma herança multipla é quando a classe filha possui uma ou mais classes mães.
-- 
+- Upcast é subir a herança, enquanto downcast é descer a herança.
+- Polimorfismo é a mesma ação (método) se comportando diferente.
+- Associação possibilita um relacionamento entre classes/objetos, no qual seja possível ajuda a outras classes/objetos e representar de forma completa o conceito ao qual se destinam. Nesse relacionamento, as classes e objetos interagem entre si.
+- Existe a associação estrutural (composição e agragação) e comportamentaç (dependência).

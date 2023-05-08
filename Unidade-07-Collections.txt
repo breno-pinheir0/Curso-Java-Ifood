@@ -1,0 +1,4 @@
+- Collection é um objeto que agrupa múltiplos elementos dentro de uma única unidade.
+- Serve para armazenar e processar coleções de dados de forma eficiente.
+- Algoritmo é uma sequência lógica, finita e definida de instruções que devem ser seguidas para resolver um problema.
+- 

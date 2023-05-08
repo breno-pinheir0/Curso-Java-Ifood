@@ -13,3 +13,7 @@
 - Objeto é a representação de um conceito/entidade do mundo real, que pode ser física(Ex: bola, carro, árvore, etc.) ou conceitual(Ex: Viagem, estoque, compra, etc.) e possui significado bem definido. 
 - Como criar um objeto: Carro carro = new Carro();
 - Mensagem é o processo de ativação de um método de um objeto. Isso ocorre quando uma requisição (chamada) a esse método é realizada, assim disparando a execução de seu comportamento descrito por sua classe. Pode também ser direcionada diretamente à classe caso a requisição seja a um método estático.
+- Herança é o relacionamento entre classes em que uma classe, chamada de subclasse, é uma extensão de outra classe chamada de superclasse. Devido a isto, a subclasse consegue reaproveitar os atributos e métodos da superclasse, além de possuir seus próprios membros(atributos e métodos). Para representar, usamos: class A extends B{}
+- Uma herança simples é quando a classe filha só possui uma classe mãe.
+- Uma herança multipla é quando a classe filha possui uma ou mais classes mães.
+- 

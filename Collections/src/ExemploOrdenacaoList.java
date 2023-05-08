@@ -26,10 +26,12 @@ public class ExemploOrdenacaoList {
         System.out.println(meusGatos);
 
         System.out.println("--\tOrdem Natural (Nome)\t---");
-    }
+        Collections.sort(meusGatos);
+        System.out.println(meusGatos);
+    }   
 }
 
-class Gato {
+class Gato implements Comparable<Gato>{
     private String nome;
     private Integer idade;
     private String cor;
@@ -59,5 +61,10 @@ class Gato {
             ", idade=" + idade +
             ", cor='" + cor + '\'' +
             '}';
+    }
+
+    @Override
+    public int compareTo(Gato gato){
+        return this.getNome().compareToIgnoreCase(gato.getNome());
     }
 }

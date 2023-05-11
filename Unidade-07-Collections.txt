@@ -4,3 +4,4 @@
 - A interface List permite elementos duplicados e garante ordem de inserção.
 - ArrayList deve ser usado onde mais operações de pesquisa são necessárias. Usa um array para guardar os elementos.
 - LinkedList deve ser usado onde mais operações de inserção e exclusão são necessárias. Utiliza uma lista duplamente ligada para guardar os elementos.
+- A interface Set não permite elementos duplicados e não possui índice.

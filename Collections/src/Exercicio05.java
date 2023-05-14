@@ -24,9 +24,9 @@ public class Exercicio05 {
     
 }
 
-class Estados{
+class Estado{
     private String nome;
-    private int populacao;
+    private Integer populacao;
 
     public Estado(String nome, Integer populacao){
         this.nome = nome;
@@ -37,7 +37,28 @@ class Estados{
         return nome;
     }
 
-    public int getPopulacao(){
+    public Integer getPopulacao(){
         return populacao;
+    }
+
+    @Override
+    public boolean equals(Object o){
+        if(this == o) return true;
+        if(o == null || getClass() != o.getClass()) return false;
+        Estado estado = (Estado) o;
+        return nome.equals(estado.nome) && populacao.equals(estado.populacao);
+    }
+
+    @Override
+    public int hashCode(){
+        return Objects.hash(nome, populacao);
+    }
+
+    @Override
+    public String toString(){
+        return  "Estado{" +
+                "nome ='" + nome + '\'' +
+                ", populacao=" + populacao +
+                '}';
     }
 }

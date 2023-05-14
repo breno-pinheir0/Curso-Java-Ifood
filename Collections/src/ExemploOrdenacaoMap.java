@@ -43,8 +43,12 @@ public class ExemploOrdenacaoMap {
         System.out.println();
 
         System.out.println("--\tOrdem Alfabética dos nomes dos livros\t--");
-        Set<Map.Entry<String, Livro>> meusLivros3 = new TreeSet<>();
-
+        Set<Map.Entry<String, Livro>> meusLivros3 = new TreeSet<>(new ComparatorNome());
+        meusLivros3.addAll(meusLivros.entrySet());
+        for(Map.Entry<String, Livro> livro:meusLivros3){
+            System.out.println(livro.getKey() + " - " + livro.getValue().getNome());
+        }
+        System.out.println();
 
     }
     

@@ -24,6 +24,11 @@ public class Exercicio04 {
         System.out.println("---\t Ordem Natural(nome)\t---");
         Set<LinguagemFavorita> linguagem2 = new TreeSet<>(linguagem);
         for(LinguagemFavorita Linguagem : linguagem2) System.out.println(Linguagem.getNome() + " - " + Linguagem.getAnoDeCriacao() + " - " + Linguagem.getIde());
+
+        System.out.println();
+        System.out.println("---\t Ordem IDE\t---");
+        Set<LinguagemFavorita> linguagem3 = new TreeSet<>(new ComparatorIDE());
+        for(LinguagemFavorita Linguagem : linguagem3) System.out.println(Linguagem.getNome() + " - " + Linguagem.getAnoDeCriacao() + " - " + Linguagem.getIde());
     
     
     }
@@ -79,5 +84,16 @@ class LinguagemFavorita implements Comparable<LinguagemFavorita>{
         int nome = this.getNome().compareTo(linguagem.getNome());
         if(nome != 0) return nome;
         return this.getNome().compareTo(linguagem.getNome());
+    }
+}
+
+class ComparatorIDE implements Comparator<LinguagemFavorita>{
+    @Override
+    public int compare(LinguagemFavorita l1, LinguagemFavorita l2){
+
+        int ide = l1.getIde().compareTo(l2.getIde());
+        if(ide != 0) return ide;
+
+        return l1.getIde().compareTo(l2.getIde());
     }
 }

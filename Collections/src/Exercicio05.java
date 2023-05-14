@@ -22,7 +22,7 @@ import java.util.*;
 
 public class Exercicio05 {
     public static void main(String[] args) {
-        Map<String, Integer> estados = new HashMap<>(){{ // HashMap para ordem aleatória
+        Map<String, Integer> estados = new HashMap<>(){{ 
             put("PE", 9616621);
             put("AL", 3351543);
             put("CE", 9187103);
@@ -37,13 +37,29 @@ public class Exercicio05 {
         System.out.println();
 
         System.out.println("Confira se o estado de PB está no dicionário. Caso não, adicione: PB - 4039277: ");
-        String novoEstado = "PB";
+        estados.put("PB", 4039277);
+        System.out.println();
+
+        System.out.println("Exiba a população de PE: ");    
         Set<Map.Entry<String, Integer>> entries = estados.entrySet();
+        String pe = "PE";
         for(Map.Entry<String, Integer> entry: entries){
-            if(entry.getKey().contains(novoEstado)){
-                System.out.println("Contém o estado de PB.");
-            } else {estados.put("PB", 4039277);}
+            if(entry.getKey().equals(pe)){
+                System.out.println(entry.getValue());
+            }
         }
+        System.out.println();
+
+        Map<String, Integer> estados1 = new LinkedHashMap<>(){{ 
+            put("PE", 9616621);
+            put("AL", 3351543);
+            put("CE", 9187103);
+            put("RN", 3534265);
+            put("PB", 4039277);
+        }};
+        System.out.println(estados1.toString());
+        System.out.println();
+
     }
     
 }

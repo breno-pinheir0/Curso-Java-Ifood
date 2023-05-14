@@ -38,7 +38,7 @@ public class ExemploSet {
 
         System.out.println("Exiba as notas na ordem que foram informadas: ");
         Set<Double> notas2 = new LinkedHashSet<>(); //LinkedHashSet mantém a ordem dos elementos de acordo com a inserção
-        notas.add(7d);
+        notas2.add(7d);
         notas2.add(8.5);
         notas2.add(9.3);
         notas2.add(5d);

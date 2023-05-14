@@ -51,7 +51,12 @@ public class ExemploOrdenacaoMap {
         System.out.println();
 
         System.out.println("--\tOrdem por número de páginas\t--");
-
+        Set<Map.Entry<String, Livro>> meusLivros4 = new TreeSet<>(new ComparatorPaginas());
+        meusLivros4.addAll(meusLivros.entrySet());
+        for(Map.Entry<String, Livro> livro:meusLivros4){
+            System.out.println(livro.getKey() + " - " + livro.getValue().getNome());
+        }
+        System.out.println();
     }
     
 }
@@ -99,5 +104,12 @@ class ComparatorNome implements Comparator<Map.Entry<String, Livro>>{
     @Override
     public int compare(Map.Entry<String, Livro> l1, Map.Entry<String, Livro>l2){
         return l1.getValue().getNome().compareToIgnoreCase(l2.getValue().getNome());
+    }
+}
+
+class ComparatorPaginas implements Comparator<Map.Entry<String, Livro>>{
+    @Override
+    public int compare(Map.Entry<String, Livro> l1, Map.Entry<String, Livro>l2){
+        return l1.getValue().getPaginas().compareTo(l2.getValue().getPaginas());
     }
 }

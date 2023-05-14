@@ -14,7 +14,7 @@ public class ExemploOrdenacaoMap {
         
         System.out.println("--\tOrdem Aleatória\t--");
 
-        Map<String, Livro> meusLivros = new HashMap<>(){{ // hashmap para ordem aleatória
+        Map<String, Livro> meusLivros = new HashMap<>(){{ // HashMap para ordem aleatória
             put("Hawking, Stephen", new Livro("Uma Breve História do Tempo", 256));
             put("Duhigg, Charles", new Livro("O Poder do Hábito", 408));
             put("Harari, Yuval Noah", new Livro("21 Lições para o Século 21", 432));
@@ -25,7 +25,7 @@ public class ExemploOrdenacaoMap {
         System.out.println();
 
         System.out.println("--\tOrdem de Inserção\t--");
-        Map<String, Livro> meusLivros1 = new LinkedHashMap<>(){{ // hashmap para ordem aleatória
+        Map<String, Livro> meusLivros1 = new LinkedHashMap<>(){{ // LinkedHashMap para ordem aleatória
             put("Hawking, Stephen", new Livro("Uma Breve História do Tempo", 256));
             put("Duhigg, Charles", new Livro("O Poder do Hábito", 408));
             put("Harari, Yuval Noah", new Livro("21 Lições para o Século 21", 432));
@@ -35,6 +35,15 @@ public class ExemploOrdenacaoMap {
         }
         System.out.println();
 
+        System.out.println("--\tOrdem Alfabética dos autores\t--");
+        Map<String, Livro> meusLivros2 = new TreeMap<>(meusLivros);
+        for(Map.Entry<String, Livro> livro:meusLivros2.entrySet()){
+            System.out.println(livro.getKey() + " - " + livro.getValue().getNome());
+        }
+        System.out.println();
+
+        System.out.println("--\tOrdem Alfabética dos nomes dos livros\t--");
+        Set<Map.Entry<String, Livro>> meusLivros3 = new TreeSet<>();
 
 
     }
@@ -77,5 +86,12 @@ class Livro{
                 "nome ='" + nome + '\'' +
                 ", paginas=" + paginas +
                 '}';
+    }
+}
+
+class ComparatorNome implements Comparator<Map.Entry<String, Livro>>{
+    @Override
+    public int compare(Map.Entry<String, Livro> l1, Map.Entry<String, Livro>l2){
+        return l1.getValue().getNome().compareToIgnoreCase(l2.getValue().getNome());
     }
 }

@@ -14,8 +14,8 @@ public class Exercicio04 {
     public static void main(String[] args) {
         Set<LinguagemFavorita> linguagem = new HashSet<>(){{
             add(new LinguagemFavorita("Java", 2000, "IntelliJ"));
-            add(new LinguagemFavorita("Python", 2006, "VSCode"));
-            add(new LinguagemFavorita("HTML", 2002, "Notepad++"));
+            add(new LinguagemFavorita("Python", 2002, "VSCode"));
+            add(new LinguagemFavorita("HTML", 2006, "Notepad++"));
         }};
         System.out.println("---\t Ordem de Inserção\t---");
         for(LinguagemFavorita Linguagem : linguagem) System.out.println(Linguagem.getNome() + " - " + Linguagem.getAnoDeCriacao() + " - " + Linguagem.getIde());
@@ -30,6 +30,12 @@ public class Exercicio04 {
         Set<LinguagemFavorita> linguagem3 = new TreeSet<>(new ComparatorIDE());
         linguagem3.addAll(linguagem);
         for(LinguagemFavorita Linguagem : linguagem3) System.out.println(Linguagem.getNome() + " - " + Linguagem.getAnoDeCriacao() + " - " + Linguagem.getIde());
+
+        System.out.println();
+        System.out.println("---\t Ordem Ano de Criação/Nome\t---");
+        Set<LinguagemFavorita> linguagem4 = new TreeSet<>(new ComparatorAnoDeCriacaoNome());
+        linguagem4.addAll(linguagem);
+        for(LinguagemFavorita Linguagem : linguagem4) System.out.println(Linguagem.getNome() + " - " + Linguagem.getAnoDeCriacao() + " - " + Linguagem.getIde());
     
     
     }
@@ -96,5 +102,16 @@ class ComparatorIDE implements Comparator<LinguagemFavorita>{
         if(ide != 0) return ide;
 
         return l1.getIde().compareTo(l2.getIde());
+    }
+}
+
+class ComparatorAnoDeCriacaoNome implements Comparator<LinguagemFavorita>{
+    @Override
+    public int compare(LinguagemFavorita l1, LinguagemFavorita l2){
+
+        int anoDeCriacao = Integer.compare(l1.getAnoDeCriacao(), l2.getAnoDeCriacao());
+        if(anoDeCriacao != 0) return anoDeCriacao;
+
+        return l1.getNome().compareTo(l2.getNome());
     }
 }

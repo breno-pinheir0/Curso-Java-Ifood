@@ -50,6 +50,8 @@ public class ExemploOrdenacaoMap {
         }
         System.out.println();
 
+        System.out.println("--\tOrdem por número de páginas\t--");
+
     }
     
 }

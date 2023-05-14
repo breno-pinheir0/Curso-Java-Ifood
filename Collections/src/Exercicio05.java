@@ -35,6 +35,15 @@ public class Exercicio05 {
         estados.put("RN", 3534165);
         System.out.println(estados);
         System.out.println();
+
+        System.out.println("Confira se o estado de PB está no dicionário. Caso não, adicione: PB - 4039277: ");
+        String novoEstado = "PB";
+        Set<Map.Entry<String, Integer>> entries = estados.entrySet();
+        for(Map.Entry<String, Integer> entry: entries){
+            if(entry.getKey().contains(novoEstado)){
+                System.out.println("Contém o estado de PB.");
+            } else {estados.put("PB", 4039277);}
+        }
     }
     
 }

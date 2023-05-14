@@ -28,6 +28,7 @@ public class Exercicio04 {
         System.out.println();
         System.out.println("---\t Ordem IDE\t---");
         Set<LinguagemFavorita> linguagem3 = new TreeSet<>(new ComparatorIDE());
+        linguagem3.addAll(linguagem);
         for(LinguagemFavorita Linguagem : linguagem3) System.out.println(Linguagem.getNome() + " - " + Linguagem.getAnoDeCriacao() + " - " + Linguagem.getIde());
     
     

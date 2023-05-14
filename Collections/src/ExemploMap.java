@@ -88,8 +88,8 @@ public class ExemploMap {
         System.out.println(carrosPopulares);
         System.out.println();
 
-        Map<String, Double> carrosPopulares1 = new LinkedHashMap<>(){{ //HashMap não salva a ordem de inserção
-            put("gol", 14.4); // para adicionar um valor, devemos usar o put
+        Map<String, Double> carrosPopulares1 = new LinkedHashMap<>(){{ //LinkedHashMap salva a ordem de inserção
+            put("gol", 14.4); 
             put("uno", 15.6);
             put("mobi", 16.1);
             put("hb20", 14.5);
@@ -98,6 +98,16 @@ public class ExemploMap {
         System.out.println(carrosPopulares1);
         System.out.println();
 
+        System.out.println("Exiba o dicionário ordenado pelo modelo: ");
+        Map<String, Double> carrosPopulares2 = new TreeMap<>(carrosPopulares1); //TreeMap salva a ordem de acordo com a chave (String)
+        System.out.println(carrosPopulares2);
+        System.out.println();
+
+        System.out.println("Apague o dicionário de carros.");
+        carrosPopulares.clear();
+        System.out.println();
+
+        System.out.println("Confira se o dicionário está vazio: " + carrosPopulares.isEmpty());
 
 
     }

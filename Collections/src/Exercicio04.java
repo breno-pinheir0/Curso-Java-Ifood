@@ -36,6 +36,12 @@ public class Exercicio04 {
         Set<LinguagemFavorita> linguagem4 = new TreeSet<>(new ComparatorAnoDeCriacaoNome());
         linguagem4.addAll(linguagem);
         for(LinguagemFavorita Linguagem : linguagem4) System.out.println(Linguagem.getNome() + " - " + Linguagem.getAnoDeCriacao() + " - " + Linguagem.getIde());
+
+        System.out.println();
+        System.out.println("---\t Ordem Nome/Ano de Criação/IDE\t---");
+        Set<LinguagemFavorita> linguagem5 = new TreeSet<>(new ComparatorNomeAnoDeCriacaoIDE());
+        linguagem5.addAll(linguagem);
+        for(LinguagemFavorita Linguagem : linguagem5) System.out.println(Linguagem.getNome() + " - " + Linguagem.getAnoDeCriacao() + " - " + Linguagem.getIde());
     
     
     }
@@ -113,5 +119,19 @@ class ComparatorAnoDeCriacaoNome implements Comparator<LinguagemFavorita>{
         if(anoDeCriacao != 0) return anoDeCriacao;
 
         return l1.getNome().compareTo(l2.getNome());
+    }
+}
+
+class ComparatorNomeAnoDeCriacaoIDE implements Comparator<LinguagemFavorita>{
+    @Override
+    public int compare(LinguagemFavorita l1, LinguagemFavorita l2){
+
+        int nome = l1.getNome().compareTo(l2.getNome());
+        if(nome != 0) return nome;
+
+        int anoDeCriacao = Integer.compare(l1.getAnoDeCriacao(), l2.getAnoDeCriacao());
+        if(anoDeCriacao != 0) return anoDeCriacao;
+
+        return l1.getIde().compareTo(l2.getIde());
     }
 }

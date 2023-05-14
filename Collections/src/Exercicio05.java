@@ -21,6 +21,21 @@ import java.util.*;
  */
 
 public class Exercicio05 {
+    public static void main(String[] args) {
+        Map<String, Integer> estados = new HashMap<>(){{ // HashMap para ordem aleatória
+            put("PE", 9616621);
+            put("AL", 3351543);
+            put("CE", 9187103);
+            put("RN", 3534265);
+        }};
+        System.out.println(estados.toString());
+        System.out.println();
+
+        System.out.println("Substitua a população do estado do RN por 3534165: ");
+        estados.put("RN", 3534165);
+        System.out.println(estados);
+        System.out.println();
+    }
     
 }
 
@@ -57,8 +72,8 @@ class Estado{
     @Override
     public String toString(){
         return  "Estado{" +
-                "nome ='" + nome + '\'' +
-                ", populacao=" + populacao +
+                "nome = '" + nome + '\'' +
+                ", populacao = " + populacao +
                 '}';
     }
 }

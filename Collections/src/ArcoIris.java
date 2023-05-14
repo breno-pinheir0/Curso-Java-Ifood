@@ -19,8 +19,42 @@ public class ArcoIris {
         cores.add("Amarelo");
         cores.add("Verde");
         cores.add("Violeta");
+        Iterator<String> iterator = cores.iterator(); 
+        while(iterator.hasNext()){
+            String next = iterator.next();
+            System.out.println(next);
+            
+        }
+        System.out.println();
         
+        System.out.println("Quantidade de cores: " + cores.size());
+        System.out.println();
+
+        Set<String> cores2 = new TreeSet<>(cores);
+        System.out.println(cores2);
+        System.out.println();
+
+        Iterator<String> iterator2 = cores.iterator();
+        while(iterator2.hasNext()){
+            String next = iterator2.next();
+            if(next.charAt(0) == 'V'){
+                
+                System.out.println(next);
+            } 
+        }
+        System.out.println();
+        for(String cores3:cores){
+            if(cores3.startsWith("A") || cores3.startsWith("L")){
+                cores2.remove(cores3);
+            }
+        }
+        System.out.println(cores2);
+        System.out.println();
         
+        cores2.clear();
+
+        System.out.println("O conjunto está vazio: " + cores2.isEmpty());
+
     }
     
 

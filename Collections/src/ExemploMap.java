@@ -53,7 +53,7 @@ public class ExemploMap {
         }
         System.out.print(modeloMaisEficiente + " - " + consumoMaisEficiente);
         System.out.println();
-        
+
         System.out.println("Exiba o modelo menos econômico e seu consumo: ");
         Double consumoMenosEficiente = Collections.min(carrosPopulares.values()); // pedimos o menor valor da coleção de valores
         String modeloMenosEficiente = "";
@@ -63,7 +63,40 @@ public class ExemploMap {
             }
         }
         System.out.print(modeloMenosEficiente + " - " + consumoMenosEficiente);
+        System.out.println();
+
         
+        Iterator<Double> iterator = carrosPopulares.values().iterator();
+        Double soma = 0d;
+        while(iterator.hasNext()){
+            soma += iterator.next();
+        }
+        System.out.println("Exiba a soma dos consumos: " + soma);
+        System.out.println();
+
+        System.out.println("Exiba a média dos consumos deste dicionário de carros: " + (soma/carrosPopulares.size()));
+        System.out.println();
+
+        System.out.println("Remova os modelos com consumo igual a 15,6km/l");
+        
+        Iterator<Double> iterator1 = carrosPopulares.values().iterator();
+        while(iterator1.hasNext()){
+            if(iterator1.next().equals(15.6)){
+                iterator1.remove();
+            }
+        }
+        System.out.println(carrosPopulares);
+        System.out.println();
+
+        Map<String, Double> carrosPopulares1 = new LinkedHashMap<>(){{ //HashMap não salva a ordem de inserção
+            put("gol", 14.4); // para adicionar um valor, devemos usar o put
+            put("uno", 15.6);
+            put("mobi", 16.1);
+            put("hb20", 14.5);
+            put("kwid", 15.6);
+        }};
+        System.out.println(carrosPopulares1);
+        System.out.println();
 
 
 

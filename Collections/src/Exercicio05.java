@@ -25,5 +25,19 @@ public class Exercicio05 {
 }
 
 class Estados{
-    
+    private String nome;
+    private int populacao;
+
+    public Estado(String nome, Integer populacao){
+        this.nome = nome;
+        this.populacao = populacao;
+    }
+
+    public String getNome(){
+        return nome;
+    }
+
+    public int getPopulacao(){
+        return populacao;
+    }
 }

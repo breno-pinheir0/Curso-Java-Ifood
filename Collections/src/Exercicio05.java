@@ -60,6 +60,59 @@ public class Exercicio05 {
         System.out.println(estados1.toString());
         System.out.println();
 
+        System.out.println("Exiba os estados e suas populações em ordem alfabética: ");
+        Map<String, Integer> estados2 = new TreeMap<>(estados1); //TreeMap salva a ordem de acordo com a chave (String)
+        System.out.println(estados2);
+        System.out.println();
+
+        
+        Integer  menorPopulacao = Collections.min(estados1.values()); // pedimos o maior valor da coleção de valores
+        String estadoMenorPopulacao = "";
+        for(Map.Entry<String, Integer> entry: entries){
+            if(entry.getValue().equals(menorPopulacao)){
+                estadoMenorPopulacao = entry.getKey();
+            }
+        }
+        System.out.println("Exiba os estados com a menor população e sua quantidade: " + estadoMenorPopulacao);
+        System.out.println();
+    
+        
+        Integer maiorPopulacao = Collections.max(estados1.values()); // pedimos o maior valor da coleção de valores
+        String  estadoMaiorPopulacao = "";
+        for(Map.Entry<String, Integer> entry: entries){
+            if(entry.getValue().equals(maiorPopulacao)){
+                estadoMaiorPopulacao = entry.getKey();
+            }
+        }
+        System.out.println("Exiba os estados com a maior população e sua quantidade: " + estadoMaiorPopulacao);
+        System.out.println();
+
+        Integer soma = 0;
+        for(Map.Entry<String, Integer> entry: entries){
+            soma += entry.getValue();
+            
+        }
+        System.out.println("Exiba a soma da população desses estados: " + soma);
+        System.out.println();
+
+        System.out.println("Exiba a média da população desses estados: " + (soma/estados1.size()));
+        System.out.println();
+
+        Iterator<Integer> iterator1 = estados1.values().iterator();
+        while(iterator1.hasNext()){
+            if(iterator1.next()  < 4000000){
+                iterator1.remove();
+            }
+        }
+        System.out.println("Remova os estados com a população menor que 4000000: " + estados1);
+        System.out.println();
+
+        System.out.println("Apague o dicionário de estados");
+        estados1.clear();
+        System.out.println();
+
+        System.out.println("Verifique se o dicionário está vazio: " + estados1.isEmpty());
+        System.out.println();
     }
     
 }

@@ -7,3 +7,6 @@
 - A interface Set não permite elementos duplicados e não possui índice.
 - O Map é um objeto que permite colocar múltiplos objetos, sendo que cada objeto possui uma chave e um valor. Cada chave possui valor único. Os valores podem se repetir.
 - Classe anônima é uma classe que não recebeu um nome e é declarado e instanciado em uma única instrução.
+- Funciontal Interface é qualquer interface com um (apenas um) método abstrato funcional e sua implementação pode ser tratada como expressões lambda. Pode possuir a notação @FunctionalInterface ou não.
+- Uma função lambda é uma função sem declaração, ou seja, não é necessário colocar um nome, tipode retorno e modificador de acesso. O método é declarado no mesmo lugar em que será usado. Sua sintaxe é: (argumento) -> (corpo).
+- 

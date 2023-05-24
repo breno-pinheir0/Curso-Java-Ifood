@@ -8,5 +8,5 @@
 - O Map é um objeto que permite colocar múltiplos objetos, sendo que cada objeto possui uma chave e um valor. Cada chave possui valor único. Os valores podem se repetir.
 - Classe anônima é uma classe que não recebeu um nome e é declarado e instanciado em uma única instrução.
 - Funciontal Interface é qualquer interface com um (apenas um) método abstrato funcional e sua implementação pode ser tratada como expressões lambda. Pode possuir a notação @FunctionalInterface ou não.
-- Uma função lambda é uma função sem declaração, ou seja, não é necessário colocar um nome, tipode retorno e modificador de acesso. O método é declarado no mesmo lugar em que será usado. Sua sintaxe é: (argumento) -> (corpo).
-- 
+- Uma função lambda é uma função sem declaração, ou seja, não é necessário colocar um nome, tipode retorno e modificador de acesso. O método é declarado no mesmo lugar em que será usado. É uma forma de simplificar uma classe anônima. Sua sintaxe é: (argumento) -> (corpo).
+- Reference Method é um recurso que permite fazer referência a um método ou construtor de uma classe(de forma funcional) e assim indicar que ele deve ser utilizado num ponto específico do código, deixando-o mais simples e legível. É uma forma de simplificar uma função lambda. Sua sintaxe é classe/referência::método.

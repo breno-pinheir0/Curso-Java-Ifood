@@ -5,3 +5,5 @@
 - ArrayList deve ser usado onde mais operações de pesquisa são necessárias. Usa um array para guardar os elementos.
 - LinkedList deve ser usado onde mais operações de inserção e exclusão são necessárias. Utiliza uma lista duplamente ligada para guardar os elementos.
 - A interface Set não permite elementos duplicados e não possui índice.
+- O Map é um objeto que permite colocar múltiplos objetos, sendo que cada objeto possui uma chave e um valor. Cada chave possui valor único. Os valores podem se repetir.
+- Classe anônima é uma classe que não recebeu um nome e é declarado e instanciado em uma única instrução.

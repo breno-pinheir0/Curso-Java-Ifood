@@ -9,7 +9,7 @@ id = 4 - Contato = nome: Cami, numero: 5555;
 id = 3 - Contato = nome: Jon, numero: 1111;
 */
 
-public class StreamAPI {
+public class Exercicio06Parte02 {
     
 
     public static void main(String[] args) {

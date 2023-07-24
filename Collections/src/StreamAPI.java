@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.function.Function;
 
 /*Dadas as seguintes informações  de id e contato, crie um dicionário e
 ordene este dicionário exibindo (Nome id - Nome contato);
@@ -43,7 +44,22 @@ public class StreamAPI {
 
         System.out.println("--\tOrdem número telefone\t--");
         //precisamos organizar os valores. Logo:
-        Set<Map.Entry<Integer, Contato>> set = new TreeSet<>(new ComparatorOrdemNumerica());
+        /*Set<Map.Entry<Integer, Contato>> set = new TreeSet<>(new Comparator<Map.Entry<Integer , Contato>>() {
+            @Override
+            public int compare(Map.Entry<Integer, Contato> cont1, Map.Entry<Integer , Contato> cont2){
+                return Integer.compare(cont1.getValue().getNumero(), cont2.getValue().getNumero());
+            }           
+        });*/
+       /* Set<Map.Entry<Integer, Contato>> set = new TreeSet<>(Comparator.comparing(new Function<Map.Entry<Integer, Contato>, Integer>() {
+            @Override
+            public Integer apply(Map.Entry<Integer, Contato> cont){
+                return cont.getValue().getNumero();
+            }
+        }));*/
+        
+
+        Set<Map.Entry<Integer, Contato>> set = new TreeSet<>(Comparator.comparing(cont -> cont.getValue().getNumero())); // Utilizando o Lambda
+
         set.addAll(agenda.entrySet());
         for (Map.Entry<Integer, Contato> entry: set) {
             System.out.println(entry.getKey() + " - " + entry.getValue().getNumero() +
@@ -52,7 +68,7 @@ public class StreamAPI {
 
         System.out.println("--\tOrdem nome contato\t--");
         //precisamos organizar os valores. Logo:
-        Set<Map.Entry<Integer, Contato>> set1 = new TreeSet<>();
+        Set<Map.Entry<Integer, Contato>> set1 = new TreeSet<>(new ComparatorOrdemNomeContato());
         set1.addAll(agenda.entrySet());
         for (Map.Entry<Integer, Contato> entry: set1) {
             System.out.println(entry.getKey() + " - " + entry.getValue().getNome());

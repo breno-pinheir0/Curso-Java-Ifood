@@ -28,8 +28,8 @@ public class ExemploStreamAPI {
                                                                                                       // aparece 1 vez
 
         System.out.println("Transforme esta lsita de String em uma lista de números inteiros.");
-        numerosAleatorios.stream().map(Integer::parseInt).collect(Collectors.toList()).forEach(System.out::println);
-        ;
+        List<Integer> numerosAleatoriosInteger = numerosAleatorios.stream().map(Integer::parseInt).collect(Collectors.toList());//.forEach(System.out::println);
+        
 
         System.out.println("Pegue os números pares e maiores que 2 e coloque em uma lista:");
         /*
@@ -52,6 +52,25 @@ public class ExemploStreamAPI {
 
 
         System.out.println("Mostre a média dos números: ");
-        numerosAleatorios.stream().mapToInt(Integer::parseInt).average();
+        numerosAleatorios.stream().mapToInt(Integer::parseInt).average().ifPresent(v -> System.out.println(v));
+
+        System.out.println("Remova os valores ímpares: ");
+        numerosAleatoriosInteger.removeIf(i -> (i % 2 != 0));
+        System.out.println(numerosAleatoriosInteger);
+            
+        System.out.println("Ignore os 3 primeiros elementos da lista e imprima o restante:");
+
+
+        System.out.println("Retirando os números repetidos da lista, quantos números ficam?");
+
+        System.out.println("Mostre o menor valor da lista:");
+
+        System.out.println("Mostre o maior valor da lista: ");
+
+        System.out.println("Pegue apenas os números ímpares e some: ");
+
+        System.out.println("Mostre a lista na ordem numérica: ");
+
+        System.out.println("Agrupe os valroes multiplos de 3 e 5");
     }
 }

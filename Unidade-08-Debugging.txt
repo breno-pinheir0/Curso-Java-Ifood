@@ -1,0 +1,14 @@
+- Debugging é o processo de encontrar e corrigir os bugs.
+- Existem 2 grandes categorias que engloam a natureza do erro:
+
+> Erros de Sintaxe
+- É um erro nas regras estabelecidas da linguagem:
+o Parênteses, chaves, colchetes que abrem mas não fecham.
+o Duas instruções sem um ponto-e-vírgula entre elas.
+o Uma palavra-chave sendo usada numa posição inesperada.
+
+> Erros de Semântica
+- É um erro na "Lógica do Código", em sua semântica. O código está sintaticamente correto, porém não faz o que se esperava dele:
+o Tentar dividir um número por uma String ou por zero.
+o Atribuir um valor incoerente a um tipo de dado. Ex: int n = "Breno"
+o Tentar fechar um arquivo que não foi aberto

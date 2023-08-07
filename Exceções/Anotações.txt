@@ -1,0 +1,10 @@
+- Exceção é um evento que interrompe o fluxo normal do processamento de uma classe.
+- Com o tratamento de exceções, um programa pode continuar executando após lidar com um problema.
+- As exceções podem ser classificadas da seguinte maneira:
+o Error: serve para indicar se existe algum problema de recurso do programa, tornando a execução impossível de continuar;
+o Uncheked(Runtime): Exceptions que PODEM ser evitados se forem tratados e analisados pelo desenvolvedor;
+o Checked Exception: Exceptions que DEVEM ser evitados e tratados pelo desenvolvedor para o programa funcionar;
+
+- Try, catch, finally: Cada uma dessas palavras, juntas, definem blocos para o tratamento de exceções.
+- Throws: Declara que um método pode lançar uma ou várias excessões.
+- Throw: Lança explicitamente uma exception.

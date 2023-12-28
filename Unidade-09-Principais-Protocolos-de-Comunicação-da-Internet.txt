@@ -1,0 +1,15 @@
+-> HTTP e Web Socket
+
+- Uma arquitetura Client-Server possui dois lados, sendo o primeiro o cliente e o segundo o servidor. O servidor se preocupa em enviar dados para o cliente de acordo com a requisição que receber.
+- GET é quando se solicita conteúdo ao servidor.
+- POST é uma submissão de um conteúdo para o servidor.
+- HEAD é um GET porém sem corpo de resposta
+- PUT é a substituição de recursos pelos dados da requisição
+- DELETE é a remoção de um recurso
+- TRACE é a chamada de loop-back a um determinado recurso
+- OPTION são opções de comunicação com recurso
+- CONNECT são tunelamentos identificados pelos recursos
+- PATCH é uma modificação parcial
+- Toda requisição carrega informações dos cookies. E os cookies ficam no header file.
+- Existem dois tipos de cookies. O de sessão, que são apagados ao fim da sessão, e os persistentes, que ficam gravadas na máquina.
+- 

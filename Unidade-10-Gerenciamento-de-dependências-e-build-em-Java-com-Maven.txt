@@ -1,0 +1,3 @@
+- POM é a abreviação para Project Object Model. Seu formato é XML e ele detalha o projeto.
+- No arquivo pom.xml, é onde fica armazenado o nome do projeto, dependências. módulos, configurações de build, detalhes do projeto (como nome, descrição, licença, url) e configurações de ambiente (repositórios, tracking, profiles).
+- 
